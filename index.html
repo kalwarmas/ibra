@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahim Gold Traders</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        :root {
+            --primary: #D4AF37;
+            --primary-dark: #A67C00;
+            --accent: #1F2937;
+            --light-bg: #F7F3EE;
+            --card-bg: #ffffff;
+            --text: #111827;
+            --muted: #6B7280;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top, rgba(212, 175, 55, 0.18), transparent 35%),
+                        linear-gradient(180deg, #FAF7F1 0%, #EFE8DD 100%);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 520px;
+            width: 100%;
+            background: var(--card-bg);
+            border-radius: 32px;
+            box-shadow: 0 24px 60px rgba(45, 35, 18, 0.12);
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.12);
+        }
+
+        .hero {
+            padding: 44px 32px 32px;
+            text-align: center;
+            background: linear-gradient(180deg, #fff 0%, #F9F4EC 100%);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 999px;
+            background: rgba(212, 175, 55, 0.14);
+            color: var(--primary-dark);
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .logo {
+            width: 134px;
+            height: 134px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid rgba(212, 175, 55, 0.95);
+            box-shadow: 0 24px 55px rgba(212, 175, 55, 0.18);
+            margin: 0 auto 24px;
+            display: block;
+            background: #fff;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            margin-bottom: 12px;
+            line-height: 1.05;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--muted);
+            max-width: 340px;
+            margin: 0 auto 30px;
+            line-height: 1.75;
+        }
+
+        .stats {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 22px;
+            border-radius: 999px;
+            background: rgba(212, 175, 55, 0.12);
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 32px;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .stats-icon {
+            font-size: 1.4rem;
+        }
+
+        .subscribe-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: calc(100% - 64px);
+            max-width: 340px;
+            margin: 0 auto;
+            padding: 18px 0;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #D4AF37, #B8860B);
+            color: #111827;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            box-shadow: 0 16px 28px rgba(212, 175, 55, 0.22);
+        }
+
+        .subscribe-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 35px rgba(212, 175, 55, 0.28);
+        }
+
+        .feature-list {
+            margin-top: 34px;
+            text-align: left;
+            display: grid;
+            gap: 14px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 14px 18px;
+            border-radius: 18px;
+            background: #fff8e7;
+            border: 1px solid rgba(212, 175, 55, 0.12);
+        }
+
+        .feature-icon {
+            font-size: 1.4rem;
+            margin-top: 2px;
+        }
+
+        .feature-text {
+            color: var(--text);
+            font-size: 0.97rem;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .telegram-info {
+            text-align: center;
+            padding: 24px 32px;
+            background: #F9F4EA;
+            color: var(--accent);
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 18px 22px;
+            font-size: 0.88rem;
+            color: var(--muted);
+            background: #FCFBF8;
+        }
+
+        @media (max-width: 520px) {
+            .subscribe-btn {
+                width: 100%;
+                max-width: none;
+            }
+
+            .hero {
+                padding: 32px 24px 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1271261881834153');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1271261881834153&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+    <div class="container">
+        <div class="hero">
+            <div class="badge">Premium Gold Trading Community</div>
+            <img src="logo.jpeg" alt="Ibrahim Gold Traders" class="logo">
+
+            <div class="name">Ibrahim Gold Traders</div>
+            <div class="subtitle">Get real-time gold trade ideas, market alerts, and trusted entry/exit signals for the best opportunities in precious metals.</div>
+
+            <div class="stats">
+                <span class="stats-icon">✨</span>
+                <span class="subscriber-count">1.2k+ Traders Growing Daily</span>
+            </div>
+
+            <a href="https://t.me/+gojzTvUt02EzNjY0" target="_blank" class="subscribe-btn">
+                <span>Join Telegram Channel</span>
+                <span>→</span>
+            </a>
+
+            <div class="feature-list">
+                <div class="feature">
+                    <span class="feature-icon">💡</span>
+                    <div class="feature-text">Daily high-conviction gold signals.</div>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🚀</span>
+                    <div class="feature-text">Immediate alerts for breakout moves and trend reversals.</div>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🔒</span>
+                    <div class="feature-text">Safe, reliable guidance for serious traders.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="telegram-info">
+            Official Telegram link:
+            <br>
+            <a href="https://t.me/+gojzTvUt02EzNjY0" target="_blank" style="color: #A17510; text-decoration: none;">https://t.me/+gojzTvUt02EzNjY0</a>
+        </div>
+
+        <div class="footer">
+            © 2026 Ibrahim Gold Traders • All Rights Reserved
+        </div>
+    </div>
+
+</body>
+</html>
