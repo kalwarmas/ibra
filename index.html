@@ -1,1 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahim Gold Trader | Premium Trading Channel</title>
+    
+    <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-discussion="ibrahimgoldtrader" data-comments-limit="5" data-color="FFD700"></script>
 
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1271261881834153');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1271261881834153&ev=PageView&noscript=1"/>
+    </noscript>
+    <script>(function(t,l,g,r,m){t[g]||(g=t[g]=function(){g.run?g.run.apply(g,arguments):g.queue.push(arguments)},g.queue=[],t=l.createElement(r),t.async=!0,t.src=m,l=l.getElementsByTagName(r)[0],l.parentNode.insertBefore(t,l))})(window,document,'tgp','script','https://telegram.org/js/pixel.js');tgp('init','CNKhzk6e');</script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+        :root {
+            --primary: #FFD700;
+            --primary-glow: rgba(255, 215, 0, 0.35);
+            --bg-dark: #0B0E14;
+            --bg-card: rgba(18, 24, 38, 0.65);
+            --bg-accent: rgba(255, 215, 0, 0.06);
+            --border: rgba(255, 215, 0, 0.15);
+            --text-main: #F3F4F6;
+            --text-muted: #9CA3AF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-dark);
+            background-image: 
+                radial-gradient(circle at 50% -20%, rgba(255, 215, 0, 0.12), transparent 50%),
+                radial-gradient(circle at 0% 100%, rgba(255, 215, 0, 0.03), transparent 30%);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 16px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 460px;
+            width: 100%;
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Subtle top gold accent line */
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+        }
+
+        .hero {
+            padding: 44px 32px 36px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo-wrapper {
+            position: relative;
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 28px;
+        }
+
+        .logo {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary);
+            box-shadow: 0 0 25px var(--primary-glow);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Ambient pulsed ring behind logo */
+        .logo-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: var(--primary);
+            opacity: 0.15;
+            z-index: 1;
+            filter: blur(4px);
+        }
+
+        .name {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #FFFFFF 40%, #FFEFA6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 6px;
+        }
+
+        .title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--primary);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+            opacity: 0.9;
+        }
+
+        .stats {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 36px;
+            background: var(--bg-accent);
+            border: 1px solid var(--border);
+            padding: 10px 22px;
+            border-radius: 100px;
+        }
+
+        .stats-pulse {
+            width: 8px;
+            height: 8px;
+            background-color: #10B981;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #10B981;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+
+        .subscriber-count {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-main);
+            letter-spacing: 0.3px;
+        }
+
+        .subscribe-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #FFD700 0%, #D4AF37 100%);
+            color: #000000;
+            font-size: 1.15rem;
+            font-weight: 700;
+            width: 100%;
+            padding: 18px 24px;
+            border: none;
+            border-radius: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3);
+            margin-bottom: 12px;
+        }
+
+        .subscribe-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(212, 175, 55, 0.45);
+            background: linear-gradient(135deg, #FFE240 0%, #E5BE40 100%);
+        }
+
+        .subscribe-btn:active {
+            transform: translateY(0);
+        }
+
+        .subscribe-btn span {
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+
+        .subscribe-btn:hover span.arrow {
+            transform: translateX(4px);
+        }
+
+        .telegram-info {
+            text-align: center;
+            padding: 18px 24px;
+            background: rgba(255, 215, 0, 0.03);
+            border-top: 1px solid rgba(255, 215, 0, 0.08);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .telegram-info strong {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 18px;
+            font-size: 0.8rem;
+            color: rgba(156, 163, 175, 0.4);
+            background: rgba(0, 0, 0, 0.2);
+            border-top: 1px solid rgba(255, 215, 0, 0.04);
+            letter-spacing: 0.3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="hero">
+            <div class="logo-wrapper">
+                <img src="logo.jpeg" alt="Ibrahim Gold Trader" class="logo">
+            </div>
+
+            <div class="name">Ibrahim Gold Trader</div>
+            <div class="title">Gold & Forex Market Analytics</div>
+            
+            <div class="stats">
+                <div class="stats-pulse"></div>
+                <span class="subscriber-count">1,200+ Professional Traders</span>
+            </div>
+
+            <a href="https://t.me/+lo6mynCYnLNjNzJk" target="_blank" class="subscribe-btn" id="telegram-subscribe-link">
+                <span>Join Telegram Channel</span>
+                <span class="arrow" style="font-size: 1.3rem; line-height: 1;">→</span>
+            </a>
+        </div>
+
+        <div class="telegram-info">
+            Verified <strong>Official Channel</strong> Only
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Ibrahim Gold Trader &bull; All Rights Reserved
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('telegram-subscribe-link').addEventListener('click', function() {
+            // Native Meta Pixel Event Dispatch
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Subscribe');
+            }
+            
+            // Native Telegram Pixel Custom Conversion Pipeline Dispatch
+            if (typeof tgp !== 'undefined') {
+                tgp('event', 'CNKhzk6e-VgY4cGGC');
+            }
+        });
+    </script>
+
+</body>
+</html>
